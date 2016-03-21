@@ -1,6 +1,9 @@
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
+SCREEN_RATIO_PROPORTIONATE := true
+TARGET_SCREEN_ASPECT_RATIO := 16by9
+
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -24,3 +27,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
     BUILD_FINGERPRINT=google/shamu/shamu:6.0.1/MMB29V/2554798:user/release-keys \
     PRIVATE_BUILD_DESC="shamu-user 6.0.1 MMB29V 2554798 release-keys"
+
+
+#Custom unofficial build tag
+TARGET_UNOFFICIAL_BUILD_ID := temasek
+    
